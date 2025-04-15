@@ -1,7 +1,13 @@
 # CIFAR-10: NdLinear vs Baseline CNN
 
-This project compares a traditional CNN classifier with a novel `NdLinear`-based model on the CIFAR-10 dataset. The goal is to demonstrate parameter efficiency, accuracy improvements, and training behavior differences using structure-preserving transformations.
+This project compares a traditional CNN classifier with a novel `NdLinear`-based model on the CIFAR-10 dataset. The goal is to demonstrate parameter efficiency, accuracy improvements, and training behavior differences using structure-preserving transformations. 
+The provided code does use a multi-dimensional hidden_size for the NdLinear layer. However, the effectiveness of that usage could be improved by:
+-Experimenting with different hidden_size configurations to find the optimal values.
+-Exploring the use of multiple stacked NdLinear layers.
+-Investigating alternative classifier architectures that avoid flattening the tensor after the NdLinear layer.
 
+
+The provided code does use a multi-dimensional hidden_size for the NdLinear layer. However, the effectiveness of that usage could be improved by:
 ---
 
 ## 🔧 Project Structure
